@@ -1,0 +1,270 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+section {
+  background-color: white;
+}
+
+.main {
+  background-color: #212529;
+  height: 100vh;
+  color: white;
+  font-size: 40px;
+}
+
+
+.services {
+  max-width: 68.75rem;
+  margin: auto;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.service-header {
+  margin-bottom: 1rem;
+}
+
+
+.service-wrapper img {
+  padding: 1.25rem;
+}
+
+.icon {
+  width: 11.875rem;
+  height: 11.26rem;
+}
+
+.icon-card {
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px #a17a69;
+  padding: 20px;
+  margin: 10px;
+}
+
+footer {
+  background-color: #212529;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  min-height: 5vh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  align-items: center;
+  height: 15vh;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  width: 450px;
+  justify-content: space-around;
+  font-size: 20px;
+}
+
+li {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 70px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+p {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.main-area {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-text {
+  align-items: center;
+  margin: auto;
+}
+
+.button {
+  width: 200px;
+  height: 55px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 300;
+  margin: auto;
+  border: 5px solid #15f4ee;
+  letter-spacing: 12px;
+  border-radius: 100px;
+  transition: 1.5s;
+}
+
+.button a {
+  color: #15f4ee;
+}
+
+.button:hover {
+  box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee,
+              0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee;
+  text-shadow: 0 0 5px #15f4ee, 0 0 5px #15f4ee;
+}
+
+.button:active {
+  background-color: #a9a9a9;
+  color: #808080;
+}
+
+.logo {
+  height: 40px;
+  margin: 30px;
+}
+
+/* SECTION 2 */
+.sub-section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+}
+
+/* SECTION 2 container */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* SECTION 2  */
+.left {
+  width: 50%;
+  height: 600px;
+  background: url('../images/progr.jpg') no-repeat center / cover;
+  border-radius: 8px;
+}
+
+.right {
+  width: 50%;
+  min-height: 400px;
+  background-color: #2f3d3c;
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  border-radius: 8px;
+  justify-content: center;
+  color: #fff;
+  margin-left: -150px;
+}
+
+.right a {
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #fff;
+  color: black;
+  padding: 20px 30px;
+  display: inline-block;
+  letter-spacing: 2px;
+}
+
+.content h1 {
+  font-size: 40px;
+  font-weight: lighter;
+}
+
+.content p {
+  margin: 20px 0;
+  font-weight: 500;
+  line-height: 30px;
+}
+/* endSECTION 2 */
+
+/* Container overlaping */
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    width: 100%;
+    margin: 0 20px;
+  }
+  .left {
+    width: 100%;
+    height: 400px;
+  }
+  .right {
+    width: 70%;
+    margin: 0;
+    margin-top: -100px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hamburger:focus {
+  outline: 0;
+}
+
+/* Change background when scrolling */
+.bgColor {
+  transition: all 1s;
+  background-color: #212529;
+}
+
+
+@media only screen and (max-width: 1000px) {
+  .hamburger {
+    display: block;
+    border: 0;
+    background-color: transparent;
+    color: white;
+    font-size: 30px;
+    margin: 20px;
+    align-self: flex-end;
+  }
+
+  ul {
+    display: none;
+    background-color: #2b2c38;
+    margin: 0px;
+  }
+
+  ul.show {
+    display: block;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: #2b2c38;
+  }
+
+  .logo {
+    display: none;
+  }
+}
