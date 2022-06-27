@@ -199,6 +199,11 @@ p {
 }
 /* endSECTION 2 */
 
+li a:hover {
+  transition: 1000ms;
+  color: #15f4ee;
+}
+
 /* Container overlaping */
 @media only screen and (max-width: 768px) {
   .container {
@@ -232,7 +237,7 @@ a {
 
 /* Change background when scrolling */
 .bgColor {
-  transition: all 1s;
+  transition: all 1000ms;
   background-color: #212529;
 }
 
