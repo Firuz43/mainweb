@@ -58,11 +58,13 @@ footer {
 
 nav {
   display: flex;
-  justify-content: space-between;
   width: 100%;
+  justify-content: space-between;
   position: fixed;
+  top: 0;
+  left: 0;
   align-items: center;
-  height: 15vh;
+  height: 10vh;
 }
 
 ul {
@@ -222,6 +224,8 @@ li a:hover {
   }
 }
 
+
+
 a {
   text-decoration: none;
   color: white;
@@ -244,7 +248,7 @@ a {
 
 @media only screen and (max-width: 1000px) {
   .hamburger {
-    display: block;
+    display: flex;
     border: 0;
     background-color: transparent;
     color: white;
@@ -254,8 +258,10 @@ a {
   }
 
   ul {
+    position: absolute;
+    display: flex;
     display: none;
-    background-color: #2b2c38;
+    background-color: #212529;
     margin: 0px;
   }
 
@@ -264,12 +270,17 @@ a {
   }
 
   nav {
-    display: flex;
+    width: 100%;
+    align-items: flex;
+    justify-content: space-between;
     flex-direction: column-reverse;
-    background-color: #2b2c38;
+    background-color: #212529;
+    height: 10vh;
   }
 
-  .logo {
-    display: none;
-  }
+.logo {
+  display: none;
 }
+  
+}
+
